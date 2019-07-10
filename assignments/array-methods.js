@@ -89,11 +89,17 @@ console.log(ticketPriceTotal);
 //  then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
-//write a thank you note to all donors
-let allCaps = runners.map(name => name.first_name.toUpperCase());
-console.log(allCaps); 
+//write a thank you note to all donors.
+let thankYouNote = runners.map(runner => (`${runner.first_name}, Thank you for your generous donation of $${runner.donation}`));
+console.log(thankYouNote); 
 
 
 // Problem 2
+// Welcome runners to the race and hand out shirts.
+let welcome = runners.map(runner => (`${runner.first_name}, welcome to the race! Here is your ${runner.shirt_size} shirt`));
+console.log(welcome); 
 
 // Problem 3
+// Create an emailing list.
+let emailList = runners.map(runner => runner.email);
+console.log(emailList); 
